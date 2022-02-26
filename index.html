@@ -1,0 +1,410 @@
+<!-- Definición de version de HTML -->
+<!DOCTYPE html>
+<!-- definición de tipo de lenguaje de nuestra pagina web-->
+<html lang="es">
+<!-- <HEAD> "cabeza" del HTML donde definimos la parte experior a la pagina y brindamos información al navegador de nuestro contenido-->
+<head>
+    <!-- META=
+    (chearset/juego de caracteres) esto nos permite visualizar en nuestro archivo caracteres epeciales, como la letra  ñ y letras asentuadas -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">   <!--definir-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--definir-->
+    
+    <!-- definir el título el cual se mostrara en el navegador -->
+  <title>TITULO DE PAGINA</title>
+<!-- <link> para conectar nuestra hoja de estilo y con href le indicamos el tipo y ubicacion de nuestro archivo.css -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<!--<BODY> "cuerpo" del HTML donde colocaremos el contenido de nuestra pagina -->
+<body>
+        <!-- etiquetas de sección de contenido  (headre, main y foooter) -->
+  <!-- <HEADER> cabezera de nuestra página -->
+
+    <!-- Anidamiento:
+      un section puede contener articles, por ejempo, ai tenemos varios artículos que hablans sobre las etiquetas html,deben ir dentro del sectio,ya que es contenido relcionado entre si, y los article serian contenido independiente porque podriamos leer uno sin haber leido el resto, y seguiria teniendo sentido   -->
+  <header>
+
+    <!-- aqui colocariamos nuestro menú de navegación, logo, redes sociales -->
+
+  </header> 
+   <!-- <MAIN> contenido principal de la página  -->
+  <main>
+    <h1 id="ancla">titulo</h1>
+<!--
+  los h provienen de h
+    <h2>titulo</h2>
+    <h3>titulo</h3>
+    <h4>titulo</h4>
+    <h5>titulo</h5>
+    <h6>titulo</h6> -->
+
+    <article>
+      <h2>section dentro de article</h2>
+      <section>
+        <h3> contenido1 </h3>
+        <p> section: es un contenedor genericoque agrupa contenido que esta relacionado. cuando creamos bloques cuyo contenido es parte de un bloque especial usaremos section.</p>
+      </section>
+      <section>
+        <h3> contenido2 </h3>
+        <p> section: es un contenedor genericoque agrupa contenido que esta relacionado. cuando creamos bloques cuyo contenido es parte de un bloque especial usaremos section.</p>
+      </section>
+      <section>
+        <h3> contenido3 </h3>
+        <p> section: es un contenedor genericoque agrupa contenido que esta relacionado. cuando creamos bloques cuyo contenido es parte de un bloque especial usaremos section.</p>
+      </section>
+      <!-- usemos la misma lógica y expliquemos más -->
+      <section>
+        <h3>elementos en bloque y elemetos en linea</h3>
+        <!-- <SPAN> es un elemento en linea -->
+        <span>ALGUNOS de los elemetos en linea</span>
+      <!-- representado con LISTAS
+           <LU> unordered list/lista desordenada 
+           <LO> ordered lis/lista ordenada
+           <LI> list items -->
+        <ul>
+          <li>em:  <em>emphasis</em> </li>
+          <li>strong: <strong>más enfasis</strong> </li>
+          <li>small: <small>menos enfasis</small> que el texto normal</li>
+          <li>br: forzar un <br> salto de linea</li>
+          <li>wbr: salto de linea <wbr> si hiciera falta</li>
+          <li>time: se usa representar un contenido de hora/fecha</li>
+        <!-- si bien estas etiquetas estan disponibles en html no es correcto darle estilo a nuesto contenido, ya que ese trebajo fue delegado a CSS. Probablemente solo usaremos la etiqueta "I" para otro proposito-->
+          <li>i: <i>italic</i> </li>
+          <li>b: <b>bold</b> </li>
+          <li>u: <u>underline</u> </li>
+          <!-- otra etiqueta -->
+          <li> El 4 elevado al cuadrado se representa así 4<sub>2</sub>, otro ejemplo la del agua hoxigenada H<sub>2</sub>O<sub>2</sub> </li>
+        </ul>
+      </section>
+      <!-- TABLAS -->
+      <table>
+        <caption>titulo de tabla</caption>
+        <!-- colgroup sirve para seleccionar columnas mediande <col> -->
+        <colgroup>
+        <col span="5">
+        <col>
+        </colgroup>
+        <thead>
+          <tr>
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+            <th>D</th>
+            <th>E</th>
+            <th>F</th>
+          </tr>
+        </thead>
+        <!-- la sintasis de cabea y cuerpo tambien se aplica en tablas anteponiedo una T -->
+        
+        <tbody>
+          <tr>
+            <td>fila1,colum1</td>
+            <td>fila1,colum2</td>
+            <td>fila1,colum3</td>
+            <td>fila1,colum4</td>
+            <td>fila1,colum5</td>
+          <td>fila1,colum6</td>
+        </tr>
+        <tr>
+          <td>fila2,colum1</td>
+          <td>fila2,colum2</td>
+          <td>fila2,colum3</td>
+          <td>fila2,colum4</td>
+          <td>fila2,colum5</td>
+          <td>fila2,colum6</td>
+        </tr>
+        <tr>
+          <td>fila3,colum1</td>
+          <td>fila3,colum2</td>
+          <td>fila3,colum3</td>
+          <td>fila3,colum4</td>
+          <td>fila3,colum5</td>
+          <td>fila3,colum6</td>
+        </tr>
+        <tr>
+          <td>fila4,colum1</td>
+          <td>fila4,colum2</td>
+          <td>fila4,colum3</td>
+          <td>fila4,colum4</td>
+          <td>fila4,colum5</td>
+          <td>fila4,colum6</td>
+        </tr>
+        <tr>
+          <td>fila5,colum1</td>
+          <td>fila5,colum2</td>
+          <td>fila5,colum3</td>
+          <td>fila5,colum4</td>
+          <td>fila5,colum5</td>
+          <td>fila5,colum6</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="6">pie de tabla</td>
+          <!-- y rowspa="n" para ocupar más de una celda -->
+        </tr>
+      </tfoot>
+      </table>
+      
+      
+      <!-- ENLASES -->
+      <section>
+
+        <h3>enlases o links</h3>
+
+        <a href="https://www.google.com" target="_blank">soy un link de ruta absoluta</a><br>
+        <!-- con target le decimos donde queremos que se habra nuestro link con target="_self"(configuración por defecto) se habra en nuesta ventana y con target="_blank" le decimos que queremos abrirlo en una ventana nueva -->
+        <p>con esto podemos dirigirnos a cualquier pagina alojada en la web</p>
+
+        <a href="paginaalativa.html">soy un link de ruta relativa</a>
+        <p>en caso de no estar al mismo niver de carpeta podemos usar (../) por cada nivel de carpeta, pero mejor aun si usamos (/) para ir hasta la ultima carpeta por si no sabemos donde o que nivel esta situado nuesto archivo html (sitios que creamos y tenemos alojados en nuestro disco)</p>
+
+        <!-- DOWNLOAD solo se lograra si el contenido esta en nuestro servidor-->
+        <p> esto es un enlase de </p><a href="/assets/imagenes/imagen.jpg" download >DOWNLOAD</a>
+      </section>
+    </article>
+
+    <!-- otra manera valida es: article dentro de section -->
+    
+    <section>
+      <h3>los article al ser contenido independiente exije contener su propio header y/o footer</h3>
+      <article>
+         <!-- article: es un contenedor que representa contenido independiente, es decir, podemos leeree fracmento en cualquier otro sitio y tendrasentido por sí mismo -->
+        
+         <h4>ATRIBUTOS globales</h4>
+         <P class="clase"> class: este atributo sirve para dar estilo desde Css </P>
+
+         <p id="identificador"> id es un identificador único que se utiliza para seleccionar el elemento desdes JS y para hacer navegación a través de anclas</p>
+
+         <p title="Este mensaje es un ejemplo de title">titulo con tooltip.<br>Es un atributo que ayuda a la accesibilidad mostrando una descripción del elemento al que pertenece, aparece un mensaje de tooltip</p>
+
+         <p id="parrafo" data-ejemplo="datos que guardamos y aparecen por consola"> data-* es un atributo que nos permite guardar algún valor en una etiqueta HTML</p>
+      </article>
+    </section>
+    <!--id local, navegación con anclas  -->
+    <nav>
+      <ul>
+        <!-- semantica correcta de un navegador -->
+        <li><a href="#ancla">volver con ID</a></li>
+      </ul>
+    </nav>
+
+
+  </main>
+  
+  <!-- <ASIDE> por definición lo conveniete es dejarlo afuera del main pero semanticamente es valido tanto fuera como dentro.
+    aside: se utiliza para representar contenido pero no forma parte del contenido PRINCIPAL.-->
+    <aside> contenido indirectamente relacionado </aside>
+    
+    <!-- OTRAS ETIQUETAS IMPORTANTES DE BLOQUE-->
+    <address>
+      <!-- aquí podriamos datos, como direcciones o se utiliza para aportar información importante de contacto para el article más cercano o para todo el body-->
+      Nikola Tesla<br>
+      N: 10 de julio de 1856, Smiljan, Croacia<br>
+      F: 7 de enero de 1943, Wyndham New yorker hotel, New York, Estados Unidos.
+    </address>
+    <!-- <BLOCKQUOTE> Se utiliza para marcar citas a otros autores o documentos. se puede incluirel atributo "cite" para poner un enlase al documento original o fuente. -->
+    <blockquote cite="https://psicologiaymente.com/reflexiones/frases-nikola-tesla">
+      27.El futuro mostrará los resultados y juzgará a cada uno por sus logros.
+    </blockquote>
+    <!-- <pre> Se utiliza para tener código preformateado que necesita ser representado igual que se escribió -->
+    <pre>
+      Autor:
+            Nikola Tesla.
+    </pre>
+    <!--DIV -->
+    <div>
+      <p> DIV Se usa como division de documento, semánticamente no significa nada, es un contenedor genérico que se usa generalmente para dar estilo a travéz de CSS o para usar algo denominado "delegación de eventos" en JavaScript.</p>
+    </div>
+    <!-- <SPAN> -->
+    <span>span,  es equivalente a div, semánticamente no significa nada, es un contenedor genérico que se usa generalmente para dar estilo a travéz de CSS o JavaScript.</span>
+      
+    <q cite=" ">es equivalente a blockquote ,q=quote solo que "q" es para representa citas en linea, de ahí su nombre block-quote = citas en bloques</q>
+      
+    <!-- <CODE> y Caracteres especiales -->
+    <pre>
+      <code>
+        code{
+            Sirve para encerrar código que queremos representar visualmente, suele ir unico con la etiqueta "pre"
+              }
+          
+        si quisieramos representar caracteres especiales en html debemos recurrir a los caracteres ascii,
+        por ejemplo &#60;h1&#62;.
+      </code> 
+    </pre>
+    <!-- <HR> Horizontal rule, se utiliza para decirle al navegador que vamos a cambiar de tema-->
+    <hr>
+       
+    <!-- <form> es la etiqueta que engloba a nuestro formulario
+         <label> sirve para escribir el nombre del campo a rellenar
+         <imput> sirve para interactuar con el usuario
+         <button> crea un boton para enviar el formulario -->
+      
+    <!-- FORMULARIOS -->
+    <form>
+      <fieldset>
+        <legend>formulario estandar</legend>
+        <label>nombre</label>
+        <input>
+        <button>enviar formulario</button>
+      </fieldset>
+    </form>
+    <!-- <IMPUT TYPE>
+      button -> se comporta igual que el <button>
+      color: -> se utliza para especifical un color
+      date:  -> se utiliza para intruducir una fecha
+      datatime -> obsoleto
+      datatime-local -> fecha y hora, no funciona en firefox
+      email -> se utiliza para introducir un mail
+      hidden -> campo oculto, puede contener valor pero no se mostrara
+      month -> se utiliza para introducir un mes
+      number -> se utiliza para valores númericos
+      password -> se utiliza para contraseñas
+      range -> se utiliza para establecer un rango
+      reset -> se utiliza para resetear un formulario
+      search -> seutiliza para las barras de busqueda
+      submit -> se utiliza para enviar un formulario
+      tel -> se utiliza para agregar números telefónicos
+      text -> valor por defecto
+      time -> se utiliza para introducir una hora
+      url -> se utiliza para introducir URLs
+      week -> se utiliza para introducir el número de la semana del año
+-->
+  <!-- IMPUT Y LABEL -->
+  <form>
+    <label for="name">nombre</label>
+    <input id="name">
+    <input type="submit" value="submit">
+  </form>
+  <!-- formularios con fechas y hora -->
+  <form>
+    <fieldset>
+      <legend>horas y fechas</legend>
+      <input type="date">
+      <input type="time">
+      <input type="month">
+      <input type="week">
+    </fieldset>
+  </form>
+  <!-- más formularios -->
+  <form>
+    <fieldset>
+      <legend>más formularios</legend>
+
+        <!-- search -->
+        <div>
+          <label>search
+          <input type="search">
+        </label>
+      </div>
+      <!-- teléfono -->
+      <div>
+        <label>teléfono
+          <input type="tel">
+        </label>
+      </div>
+      <!-- email -->
+      <div>
+        <label>email
+          <input type="email">
+        </label>
+      </div>
+      <!-- contraseñas -->
+      <div>
+        <label>password
+          <input type="password">
+        </label>
+      </div>
+      <!-- url -->
+      <div>
+        <label>URLs
+          <input type="url">
+        </label>
+      </div>
+    </fieldset>
+  </form>
+  <!-- otras opciones -->
+  <form>
+    <fieldset>
+      <legend>otras opciones</legend>
+      <input type="color">
+      <input type="number">
+      <input type="range" step="5" min="0" max="20">
+      <input type="reset">
+      <input type="text">
+    </fieldset>
+  </form>
+  <!-- IMPUTs de tipo seleccionables -->
+  <form>
+    <fieldset>
+      <legend>tipo seleccionables</legend>
+    <!-- si queremo dejar marcado una opción por defecto con: checked
+      y si le declaramos un valor usamos, value -->
+      <label>
+        masculino
+        <input type="radio" name="gender">
+      </label>
+      <label>
+        femenino
+        <input type="radio" name="gender">
+      </label>
+      <label>
+        prefiero no decirlo
+        <input type="radio" name="gender">
+      </label>
+    </fieldset>
+  </form>
+      <!-- CHECKBOX -->
+  <form>
+    <fieldset>
+      <legend>checkbox</legend>
+      <label>
+        HTML 
+        <input type="checkbox" name="languages">
+      </label>
+      <label> 
+        <input type="checkbox" name="languages">
+        CSS
+      </label>
+      <label>
+        JavaScript 
+        <input type="checkbox" name="languages">
+      </label>
+    </fieldset>
+  </form>
+  <!-- SELECT, mezcla de radio y checkbox -->
+  <form>
+    <fieldset>
+      <legend>tipo seleccionables</legend>
+      <select name="languages">
+        <!-- si quisieramos agrupar por categorias tenemos la opcion <optgroup> -->
+        <optgroup label="lenguajes de programación">
+          <option value="c++">C++</option>
+          <option value="java">Java</option>
+          <option value="python">Python</option>
+        </optgroup>
+      </select>
+      
+    </fieldset>
+  </form>
+  <!-- <DATALIST> -->
+  <form>
+    <fieldset>
+      <legend>datalist</legend>
+      <input type="text" list="lenguaje">
+        <datalist id="lenguaje">
+          <option value="c++">descripción</option>
+          <option value="java">descripción</option>
+          <option value="python">descripción</option> 
+        </datalist>          
+    </fieldset>
+  </form>
+
+  <!-- <FOOTER> pie de página -->
+  <footer>
+
+  </footer>
+</body>
+</html>
