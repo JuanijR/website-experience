@@ -9,11 +9,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">   <!--definir-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--definir-->
+  <meta name="description" content="aquí aparece lo que se vera en el buscador del navegador ">
     
     <!-- definir el título el cual se mostrara en el navegador -->
   <title>TITULO DE PAGINA</title>
 <!-- <link> para conectar nuestra hoja de estilo y con href le indicamos el tipo y ubicacion de nuestro archivo.css -->
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/normalize.css">
 
 </head>
 
@@ -24,14 +26,15 @@
 
     <!-- Anidamiento:
       un section puede contener articles, por ejempo, ai tenemos varios artículos que hablans sobre las etiquetas html,deben ir dentro del sectio,ya que es contenido relcionado entre si, y los article serian contenido independiente porque podriamos leer uno sin haber leido el resto, y seguiria teniendo sentido   -->
-  <header>
+  <!--<header>
 
-    <!-- aqui colocariamos nuestro menú de navegación, logo, redes sociales -->
+     aqui colocariamos nuestro menú de navegación, logo, redes sociales 
 
-  </header> 
+  </header> -->
    <!-- <MAIN> contenido principal de la página  -->
   <main>
-    <h1 id="ancla">titulo</h1>
+    <h1 class="title" id="ancla">titulo</h1>
+ 
 <!--
   los h provienen de h
     <h2>titulo</h2>
@@ -40,7 +43,7 @@
     <h5>titulo</h5>
     <h6>titulo</h6> -->
 
-    <article>
+    <article class="articulo">
       <h2>section dentro de article</h2>
       <section>
         <h3> contenido1 </h3>
@@ -58,12 +61,12 @@
       <section>
         <h3>elementos en bloque y elemetos en linea</h3>
         <!-- <SPAN> es un elemento en linea -->
-        <span>ALGUNOS de los elemetos en linea</span>
+        <span class="sub-tabla">ALGUNOS de los elemetos en linea</span>
       <!-- representado con LISTAS
            <LU> unordered list/lista desordenada 
            <LO> ordered lis/lista ordenada
            <LI> list items -->
-        <ul>
+        <ul class="lista">
           <li>em:  <em>emphasis</em> </li>
           <li>strong: <strong>más enfasis</strong> </li>
           <li>small: <small>menos enfasis</small> que el texto normal</li>
@@ -79,7 +82,7 @@
         </ul>
       </section>
       <!-- TABLAS -->
-      <table>
+      <table class="tabla">
         <caption>titulo de tabla</caption>
         <!-- colgroup sirve para seleccionar columnas mediande <col> -->
         <colgroup>
@@ -401,7 +404,95 @@
         </datalist>          
     </fieldset>
   </form>
+  <form>
+    <fieldset>
+      <legend>file</legend>
+      <input type="file">
+    </fieldset>
+    <fieldset>
+      <legend>meter</legend>
+      <label for="fuel">combustible</label>
+      <meter id="fuel" min="0" max="100" value="10" low="30" high="75" optimum="50">
+      </meter>
+    </fieldset>
+  </form>
+  <form>
+    <fieldset>
 
+      <legend>progress</legend>
+      <label for="task"> tarea 1</label>
+      <progress id="task" max="100" value="10"></progress>
+    </fieldset>
+    <fieldset>
+      <legend>textarea</legend>
+      <label for="nombre"></label>
+      <textarea name="obligatirio" id="nombre" cols="30" rows="10"></textarea>
+    </fieldset>
+  </form>
+  <!-- 
+    placeholder -> da una pista de lo que el usuario tiene que introducir
+    required -> hace que un campo sea oblogatorio
+    readonly -> hace que un campo se de solo lectura
+    min - max -> Establece el minimo y maximo de un campo numerico
+    maxlength - minlength -> Establece el minimo y maximo de caracteres de un campo de texto
+    selected -> equivale a checked en los select, sirve para establecer una opcion por defecto
+    disabled -> desctiva el campo, no se podrá escribir en el autofocus 
+   -->
+  <form>
+    <fieldset>
+      <legend>placeholder</legend>
+      <input type="text" placeholder="introduce tu nombre">
+    </fieldset>
+    <fieldset>
+      <legend>required</legend>
+      <input type="text" value="hola" required>
+    </fieldset>
+    <fieldset>
+      <legend>readonly</legend>
+      <input type="text" value="solo lectura" readonly>
+    </fieldset>
+    <fieldset>
+      <legend>disabled</legend>
+      <input type="text" value="solo lectura" disabled>
+    </fieldset>
+    <fieldset>
+      <legend>min y max</legend>
+      <input type="number" min="5" max="10">
+      <input type="text" minlength="3" maxlength="5" required>
+    </fieldset>
+  </form>
+  
+  <form>
+    <fieldset>
+      <legend>selected</legend>
+      <select name="number" id="">
+        <option value="one">One</option>
+        <option value="two" selected>Two</option>
+        <!-- autofocus -> para poner por defecto al cargar el formulario -->
+      </select>
+    </fieldset>
+  </form>
+  <!-- GET vs POST -->
+  <form action="paginaalativa.html" method="post">
+    <label for="name">nombre</label>
+    <input type="text" id="name" name="name">
+    <label for="surname">apellido</label>
+    <input type="text" name="surname" id="surname">
+    <input type="submit">
+  </form>
+
+  <!--IMAGENES-->
+  <!-- los formatos de imagenes se pueden clasificar en dos tipos:
+  vectoriales: svg (recomedado siempre que se pueda) nada de peso
+
+  mapas de bits: jpg
+                png: 8 y 24 (si necesitas transparencias)
+                gif: (si necesitas imagenes animadas)
+                webp:     -->
+
+  <!-- IMAGENES -->
+  <img src="/assets/imagenes/imagen_1_.webp" alt="ojos de anime">
+ 
   <!-- <FOOTER> pie de página -->
   <footer>
 
